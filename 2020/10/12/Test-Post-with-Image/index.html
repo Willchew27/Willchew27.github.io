@@ -58,9 +58,9 @@
     
   </div>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida velit at lorem ultrices, sit amet mattis est sagittis. In mattis, massa non ultricies tristique, diam sem condimentum tortor, at aliquet purus diam non nunc. Vivamus ac felis ligula. Donec laoreet, risus nec laoreet sodales, magna leo faucibus lacus, eu rutrum enim urna quis odio. Praesent ante justo, hendrerit at consequat volutpat, ornare eu dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean convallis enim ut viverra scelerisque. In elementum neque ut molestie ultrices. Sed sagittis placerat pulvinar. Vestibulum bibendum lectus neque, sit amet pulvinar dolor euismod a.</p>
-<img src="/2020/10/12/Test-Post-with-Image/cruiseboat.jpg" class="" title="Cruise boat on river in Prague">
+<img src="../../images/loading.gif" data-original="/2020/10/12/Test-Post-with-Image/cruiseboat.jpg" class="" title="Cruise boat on river in Prague">
 
-<p><img src="/images/cruiseboat.jpg" alt="Cruise Boat on river Prague"></p>
+<p><img src="../../images/loading.gif" data-original="/images/cruiseboat.jpg" alt="Cruise Boat on river Prague"></p>
 <p>Duis tempor ipsum a placerat dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pellentesque ultrices tempor. Suspendisse cursus turpis et enim pharetra, vitae accumsan urna volutpat. In nec accumsan ligula. Proin eu tortor non mi posuere tempus non non mi. Vivamus ut maximus magna. Nunc sed orci lacus. Ut vel tellus non ipsum laoreet porttitor. Vivamus accumsan lacinia justo eu rutrum. Vestibulum porttitor eros id diam vestibulum pharetra. Curabitur tincidunt vulputate leo, sed tempor tortor dictum vitae. Phasellus a ex vestibulum, dapibus mauris a, blandit quam. Duis ut nunc imperdiet justo sagittis aliquet eget eu quam.</p>
 <p>Nam lobortis eget dui finibus hendrerit. Praesent diam lectus, condimentum efficitur elit ut, venenatis fermentum metus. Quisque a metus erat. Vivamus hendrerit dui at nisi aliquam pellentesque. Quisque varius dolor vitae nibh porta laoreet. Nam felis dui, sagittis ac hendrerit in, malesuada at dui. Curabitur a ex felis. Aenean egestas pulvinar luctus. Quisque et cursus erat. Suspendisse a augue tincidunt, convallis turpis vitae, commodo leo. Morbi vitae massa ut massa vulputate volutpat quis in sem. Nunc ultrices ullamcorper urna at faucibus. In fringilla ac augue eget consequat. Fusce convallis nibh et ex aliquam, nec ultricies nibh porttitor. Vestibulum a luctus metus, vel vestibulum lorem. Duis ac lacus ultrices, sagittis diam vel, rhoncus odio.</p>
 
@@ -159,5 +159,10 @@
     <span>Coffee - A Hexo theme made by Alex Libby</span>
     <span>Powered by <a target="_blank" rel="noopener" href="https://www.hexo.io">Hexo</a>|<a href="sitemap.xml">Sitemap</a></span>
   </footer>
-</body>
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 </html>
